@@ -2,16 +2,17 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./Header.js";
 import Progress from "./Progress.js";
-import Name from "./Name.js";
+import joint_policy from "./assets/friend.png";
+// import Name from "./Name.js";
 
 function App() {
   return (
     <div>
       <Header />
       <Progress />
-      <Name />
+      {/* <Name /> */}
       <div className="container" style={{ width: "40%" }}>
-        <div className="card text-bg-light mt-4">
+        <div className="card text-bg-light mt-4 text-center">
           <div className="card-body">
             <h5 className="card-title text-center">
               Who do you want to cover?
@@ -25,22 +26,34 @@ function App() {
                 type="radio"
                 className="btn-check"
                 name="Title"
-                id="Mr"
+                id="Just Me"
                 autocomplete="off"
                 check
               />
-              <label className="btn btn-outline-primary m-2" for="Mr">
-                Mr
+              <label className="btn btn-outline-primary m-2" for="Just Me">
+                Just Me
               </label>
               <input
                 type="radio"
                 className="btn-check"
                 name="Title"
-                id="Mrs"
+                id="Another Person"
                 autocomplete="off"
               />
-              <label className="btn btn-outline-primary m-2" for="Mrs">
-                Mrs
+              <label
+                className="btn btn-outline-primary m-2"
+                for="Another Person"
+              >
+                <div className="container-fluid">
+                  <img
+                    src={joint_policy}
+                    alt="Joint Policy"
+                    className="icon"
+                    style={{ display: "block" }}
+                    height="100"
+                  />
+                  Myself & Another Person
+                </div>
               </label>
             </div>
           </div>

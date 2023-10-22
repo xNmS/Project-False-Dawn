@@ -12,3 +12,7 @@
   background-color: #f0f0f0;
   padding: 20px;
 }
+
+.card-body .btn-group label {
+  width: 40%; /* Set the button width to 40% of the card width */
+}
