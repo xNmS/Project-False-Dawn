@@ -9,10 +9,17 @@
 
 .progress-bar-section {
   display: flex;
-  background-color: #f0f0f0;
+  background-color: #f8f8f8;
   padding: 20px;
 }
 
 .card-body .btn-group label {
-  width: 40%; /* Set the button width to 40% of the card width */
+  width: 50%;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

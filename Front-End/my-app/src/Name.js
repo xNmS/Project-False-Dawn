@@ -59,7 +59,7 @@ function Name() {
             id="First Name"
             placeholder="Enter First Name"
             aria-describedby="First Name"
-            style={{ "max-width": "45%" }}
+            style={{ maxWidth: "45%" }}
           ></input>
           <h6 className="card-subtitle mt-1">Surname</h6>
           <input
@@ -68,7 +68,7 @@ function Name() {
             id="SurName"
             placeholder="Enter Surname"
             aria-describedby="Surname"
-            style={{ "max-width": "45%" }}
+            style={{ maxWidth: "45%" }}
           ></input>
         </div>
       </div>

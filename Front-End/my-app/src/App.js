@@ -2,7 +2,8 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./Header.js";
 import Progress from "./Progress.js";
-import joint_policy from "./assets/friend.png";
+// import PolicyType from "./PolicyType.js";
+import Buttons from "./Buttons.js";
 // import Name from "./Name.js";
 
 function App() {
@@ -11,54 +12,25 @@ function App() {
       <Header />
       <Progress />
       {/* <Name /> */}
+      {/* <PolicyType /> */}
       <div className="container" style={{ width: "40%" }}>
         <div className="card text-bg-light mt-4 text-center">
           <div className="card-body">
             <h5 className="card-title text-center">
-              Who do you want to cover?
+              What is your Date of Birth?
             </h5>
-            <div
-              className="btn-group btn-group-lg"
-              role="group"
-              aria-label="Title Options"
-            >
-              <input
-                type="radio"
-                className="btn-check"
-                name="Title"
-                id="Just Me"
-                autocomplete="off"
-                check
-              />
-              <label className="btn btn-outline-primary m-2" for="Just Me">
-                Just Me
-              </label>
-              <input
-                type="radio"
-                className="btn-check"
-                name="Title"
-                id="Another Person"
-                autocomplete="off"
-              />
-              <label
-                className="btn btn-outline-primary m-2"
-                for="Another Person"
-              >
-                <div className="container-fluid">
-                  <img
-                    src={joint_policy}
-                    alt="Joint Policy"
-                    className="icon"
-                    style={{ display: "block" }}
-                    height="100"
-                  />
-                  Myself & Another Person
-                </div>
-              </label>
-            </div>
+            <input
+              type="date"
+              className="form-control form-control-lg mt-1 text-center"
+              id="First Name"
+              placeholder="Enter First Name"
+              aria-describedby="First Name"
+              style={{ maxWidth: "30%" }}
+            ></input>
           </div>
         </div>
       </div>
+      <Buttons />
     </div>
   );
 }
