@@ -1,9 +1,9 @@
 function Buttons() {
   return (
-    <div class="container mt-3" style={{ width: "40%" }}>
-      <div class="d-flex justify-content-between">
-        <button class="btn btn-secondary">Back</button>
-        <button class="btn btn-success">Next</button>
+    <div className="container mt-3" style={{ width: "40%" }}>
+      <div className="d-flex justify-content-between">
+        <button className="btn btn-secondary">Back</button>
+        <button className="btn btn-success">Next</button>
       </div>
     </div>
   );
