@@ -9,6 +9,7 @@ import Smoker from "./Smoker.js";
 import PolicyType from "./PolicyType.js";
 import CoverType from "./CoverType.js";
 import Duration from "./Duration.js";
+import Address from "./Address.js";
 import Buttons from "./Buttons.js";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/policytype" element={<PolicyType />} />
           <Route path="/covertype" element={<CoverType />} />
           <Route path="/duration" element={<Duration />} />
+          <Route path="/address" element={<Address />} />
         </Routes>
         <Buttons />
       </Router>

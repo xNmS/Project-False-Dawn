@@ -5,6 +5,7 @@ const order = [
   "/policytype",
   "/covertype",
   "/duration",
+  "/address",
 ];
 
 export default order;
