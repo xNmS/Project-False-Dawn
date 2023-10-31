@@ -18,7 +18,7 @@ function App() {
         <Header />
         <Progress />
         <Routes>
-          <Route path="/name" element={<Name />} />
+          <Route path="/" element={<Name />} />
           <Route path="/dateofbirth" element={<DateOfBirth />} />
           <Route path="/smoker" element={<Smoker />} />
           <Route path="/policytype" element={<PolicyType />} />

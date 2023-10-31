@@ -1,13 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-
-const order = [
-  "/name",
-  "/dateofbirth",
-  "/smoker",
-  "/policytype",
-  "/covertype",
-  "/duration",
-];
+import order from "./Order.js";
 
 function Buttons() {
   const location = useLocation();

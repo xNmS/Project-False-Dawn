@@ -1,5 +1,12 @@
-const progress = 50;
+import { useLocation } from "react-router-dom";
+import order from "./Order.js";
+
 function Progress() {
+  const location = useLocation();
+  const currQuestion = order.indexOf(location.pathname);
+  const noQuestions = order.length;
+  const progress = (currQuestion / noQuestions) * 100;
+
   return (
     <div className="progress-bar-section">
       <div className="container" style={{ width: "40%" }}>
