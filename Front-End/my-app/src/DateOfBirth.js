@@ -12,7 +12,7 @@ function DateOfBirth() {
             id="First Name"
             placeholder="Enter First Name"
             aria-describedby="First Name"
-            style={{ maxWidth: "30%" }}
+            style={{ maxWidth: "40%" }}
           ></input>
         </div>
       </div>

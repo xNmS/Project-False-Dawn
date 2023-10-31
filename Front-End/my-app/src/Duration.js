@@ -13,7 +13,7 @@ function Duration() {
               id="Duration"
               placeholder="e.g. 25 years"
               aria-describedby="Policy Duration"
-              style={{ maxWidth: "25%", textAlign: "center" }}
+              style={{ maxWidth: "35%", textAlign: "center" }}
             ></input>
           </div>
         </div>

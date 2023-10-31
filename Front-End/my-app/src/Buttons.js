@@ -1,9 +1,40 @@
+import { Link, useLocation } from "react-router-dom";
+
+const order = [
+  "/name",
+  "/dateofbirth",
+  "/smoker",
+  "/policytype",
+  "/covertype",
+  "/duration",
+];
+
 function Buttons() {
+  const location = useLocation();
+  const currentIndex = order.indexOf(location.pathname);
+
+  const backButton =
+    currentIndex > 0 ? (
+      <Link to={order[currentIndex - 1]}>
+        <button className="btn btn-secondary">Back</button>
+      </Link>
+    ) : (
+      <Link to={order[currentIndex]}>
+        <button className="btn btn-secondary">Back</button>
+      </Link>
+    );
+
+  const nextButton =
+    currentIndex < order.length - 1 ? (
+      <Link to={order[currentIndex + 1]}>
+        <button className="btn btn-success">Next</button>
+      </Link>
+    ) : null;
   return (
     <div className="container mt-3" style={{ width: "40%" }}>
       <div className="d-flex justify-content-between">
-        <button className="btn btn-secondary">Back</button>
-        <button className="btn btn-success">Next</button>
+        {backButton}
+        {nextButton}
       </div>
     </div>
   );
