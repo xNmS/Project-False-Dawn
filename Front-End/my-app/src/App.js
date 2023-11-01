@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
+import "./bootstrap.min.css";
 import Header from "./Header.js";
 import Progress from "./Progress.js";
 import Name from "./Name.js";

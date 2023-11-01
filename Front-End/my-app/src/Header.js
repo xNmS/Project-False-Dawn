@@ -29,7 +29,7 @@ function Header() {
             <div className="vertical-divider"></div>
             <span className="navbar-brand">Life Insurance</span>
           </div>
-          <button type="button" className="btn btn-light">
+          <button type="button" className="btn btn-primary">
             My Account
           </button>
         </div>
