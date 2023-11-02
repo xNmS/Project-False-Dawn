@@ -6,6 +6,8 @@ const order = [
   "/covertype",
   "/duration",
   "/address",
+  "/amount",
+  "/summary",
 ];
 
 export default order;

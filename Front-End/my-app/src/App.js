@@ -10,6 +10,8 @@ import PolicyType from "./PolicyType.js";
 import CoverType from "./CoverType.js";
 import Duration from "./Duration.js";
 import Address from "./Address.js";
+import Amount from "./Amount.js";
+import Summary from "./Summary.js";
 import Buttons from "./Buttons.js";
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
           <Route path="/covertype" element={<CoverType />} />
           <Route path="/duration" element={<Duration />} />
           <Route path="/address" element={<Address />} />
+          <Route path="/amount" element={<Amount />} />
+          <Route path="/summary" element={<Summary />} />
         </Routes>
         <Buttons />
       </Router>
